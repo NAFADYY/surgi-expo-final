@@ -1,0 +1,340 @@
+/* Googlefont Poppins CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+
+/* App.css */
+.custom-navbar {
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: #ffffff;
+}
+
+.bg-custom-transparent {
+  background-color: #e8e8e880;
+  width: 200px;
+  height: 45.49px;
+  padding-top: 8px; /* This is the rgba version of th color */
+}
+
+/* about us */
+
+.about-us {
+  background-color: #f9fafb; /* Light background */
+  border-radius: 8px;
+}
+
+.heading-with-bar {
+  position: relative;
+  /* font-weight: bold;
+  margin-bottom: 1.5rem; */
+  font-size: 27.94px;
+  font-weight: 400;
+  line-height: 33.11px;
+  text-align: left;
+}
+
+.heading-with-bar::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #f5a623; /* Yellow bar */
+}
+
+.blockquote {
+  font-weight: 600;
+  text-align: left;
+  padding-top: 20px;
+
+  font-weight: bold;
+}
+
+.blockquote p {
+  font-size: 41.68px;
+  font-weight: 600;
+  text-align: left;
+  color: #1c1f35;
+  line-height: 48.84px;
+  font-family: Roboto;
+}
+
+.desc p {
+  color: #666c89;
+  line-height: 28.87px;
+  font-size: 19.05px;
+}
+
+/* Image stacking */
+.image-stack {
+  position: relative;
+  height: 100%; /* Ensures the parent div takes full height */
+}
+
+.top-image {
+  position: relative;
+  top: 0; /* Aligns the top image with the top of the section */
+  left: 150px; /* Adjust if needed */
+  width: 80%; /* Adjust the width as per your design */
+  z-index: 0;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-image {
+  position: absolute;
+  top: 320px; /* Adjust to control the gap between the top and bottom images */
+  left: 10px; /* Shifted slightly to the right for the overlapping effect */
+  width: 50%;
+  z-index: 3;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* border: #fff solid 20px; */
+  border-top: 20px solid #f9fafb;
+  border-right: 20px solid #f9fafb;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .about-us {
+    padding: 20px;
+  }
+
+  .top-image {
+    width: 100%;
+    display: none;
+  }
+
+  .bottom-image {
+    width: 100%;
+    top: 150px;
+    display: none;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+}
+
+/* @media screen and (max-width: 1200px) {
+  .inner-container-vision {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section-vision {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-container-vision {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .vision-section {
+    padding: 0;
+  }
+  .inner-container-vision {
+    padding: 60px;
+  }
+} */
+
+/* why us */
+
+.why-us {
+  background-image: url("../images/why-us-bg.jpg");
+  height: 377.02px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.why-us-title {
+  font-size: 35.51px;
+  font-weight: 600;
+  line-height: 41.62px;
+  text-align: left;
+  color: #1c1f35;
+  font-family: Roboto;
+}
+
+.why-us-desc {
+  font-size: 16.23px;
+  font-weight: 500;
+  line-height: 24.6px;
+  text-align: left;
+  color: #666c89;
+}
+
+.vision-desc {
+  font-size: 19.05px;
+  font-weight: 500;
+  line-height: 28.87px;
+  text-align: left;
+  color: #666c89;
+}
+
+.misission-desc {
+  font-size: 19.05px;
+  font-weight: 500;
+  line-height: 28.87px;
+  text-align: left;
+  color: #666c89;
+}
+
+@media (max-width: 768px) {
+  .why-us-title {
+    font-size: 20px;
+  }
+  /* .why-us-bg {
+    height: 100vh;
+  } */
+  .why-us-bg {
+    height: 200px;
+    width: 100%;
+  }
+  .why-us-content {
+    width: 95%;
+    margin: auto !important;
+  }
+}
+
+/* ------------------scroll  top--------------------- */
+
+button:hover {
+  cursor: pointer;
+}
+button i.bi {
+  font-size: 40px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+
+#return-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 60%;
+  z-index: 999;
+}
+
+/* Our Team
+-------------------------------------------------------*/
+
+.team-section {
+  text-align: center;
+  margin: 50px 0;
+}
+.team-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.team-card1 {
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.team-card1:hover {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.team-card1 img {
+  width: 100%;
+  height: 400px;
+}
+.team-card1 .card-body {
+  background-color: #1c1f35;
+  color: white;
+}
+
+.social-icons1 {
+  width: 120px;
+  font-size: 20px;
+}
+.social-icons1 a {
+  color: rgb(247, 247, 247) !important;
+  margin: 0 10px;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.social-icons1 a:hover {
+  color: #ffb629 !important;
+}
+.card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+/* contactus */
+
+.contact-info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.contact-info-item i {
+  color: #000;
+  margin-right: 10px;
+}
+
+.contact-info-item h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.contact-info-item a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info-item a:hover {
+  color: #ff4b5c;
+}
+
+.contact-Us {
+  font-size: 26.73px;
+  font-weight: 400;
+  line-height: 40.1px;
+  text-align: left;
+  color: #9f9f9f;
+}

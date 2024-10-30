@@ -1,0 +1,102 @@
+.about-us {
+  background-color: #f9fafb; /* Light background */
+  border-radius: 8px;
+}
+
+.heading-with-bar {
+  position: relative;
+  /* font-weight: bold;
+    margin-bottom: 1.5rem; */
+  font-size: 27.94px;
+  font-weight: 400;
+  line-height: 33.11px;
+  text-align: left;
+}
+
+.heading-with-bar::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #f5a623; /* Yellow bar */
+}
+
+.blockquote {
+  font-weight: 600;
+  text-align: left;
+  padding-top: 20px;
+
+  font-weight: bold;
+}
+
+.blockquote p {
+  font-size: 41.68px;
+  font-weight: 600;
+  text-align: left;
+  color: #1c1f35;
+  line-height: 48.84px;
+  font-family: Roboto;
+}
+
+.desc p {
+  color: #666c89;
+  line-height: 28.87px;
+  font-size: 19.05px;
+}
+
+/* Image stacking */
+.image-stack {
+  position: relative;
+  height: 100%; /* Ensures the parent div takes full height */
+}
+
+.top-image {
+  position: relative;
+  top: 0; /* Aligns the top image with the top of the section */
+  left: 150px; /* Adjust if needed */
+  width: 80%; /* Adjust the width as per your design */
+  z-index: 0;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-image {
+  position: absolute;
+  top: 320px; /* Adjust to control the gap between the top and bottom images */
+  left: 10px; /* Shifted slightly to the right for the overlapping effect */
+  width: 50%;
+  z-index: 3;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* border: #fff solid 20px; */
+  border-top: 20px solid #f9fafb;
+  border-right: 20px solid #f9fafb;
+}
+
+.aboutus-com {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .about-us {
+    padding: 20px;
+  }
+
+  .top-image {
+    width: 100%;
+    display: none;
+  }
+
+  .bottom-image {
+    width: 100%;
+    top: 150px;
+    display: none;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+}

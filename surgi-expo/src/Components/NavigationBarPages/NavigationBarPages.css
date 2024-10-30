@@ -1,0 +1,153 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section1 {
+  background-image: url("/public/images/hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 120vh;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: left;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-family: Roboto;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 64.45px;
+  text-align: left;
+
+  color: #ffda56;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #fff;
+  background-color: #041c3780;
+  width: 250px;
+}
+
+.hero-description {
+  font-family: Roboto;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 64.45px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.hero-text1 {
+  font-size: 17.77px;
+  font-weight: 500;
+
+  text-align: left;
+}
+
+.btn-warning {
+  background: -o-linear-gradient(
+    355.94deg,
+    #ffb629 -1.21%,
+    #ffda56 58.66%,
+    #ffd7a6 116.84%
+  );
+  background: linear-gradient(
+    94.06deg,
+    #ffb629 -1.21%,
+    #ffda56 58.66%,
+    #ffd7a6 116.84%
+  );
+  border-color: #ffc107;
+  color: #000000 !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 600;
+}
+
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 32px;
+  }
+  .hero-description {
+    font-size: 18px;
+  }
+} */
+
+/* App.css */
+.custom-navbar {
+  background-color: #ffffffc2;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: #ffffff; /* Change background color on scroll */
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+/* Flexbox to push the nav links to the right */
+.navbar .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navbar .nav-link {
+  color: #000000; /* Default link color when not scrolled */
+  padding: 0 20px;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  font-weight: 400;
+  font-size: 24px;
+  padding-right: 28px !important;
+}
+
+.navbar .nav-link-scrolled {
+  color: #000 !important; /* Change link color to black when scrolled */
+}
+
+.navbar .nav-link:hover {
+  color: #007bff; /* Adjust the hover color if necessary */
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-right {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; /* Centered on smaller screens */
+  }
+  .navbar .nav-link {
+    padding: 15px 20px;
+    text-align: center;
+  }
+}

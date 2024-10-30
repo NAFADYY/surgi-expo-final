@@ -1,0 +1,148 @@
+/* Header Section with Background Image */
+.header-section1 {
+  position: relative; /* To make sure the overlay is positioned relative to the header */
+  background-image: url("/public/images/productheader.png"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust based on your design */
+}
+
+/* Overlay to darken the background */
+.header-section1 .overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Make sure the overlay is semi-transparent */
+  z-index: 1; /* Ensures overlay is above the background image */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Title and breadcrumb */
+.header-title1 {
+  color: #ffffff; /* Golden yellow */
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  z-index: 10; /* Ensures text is on top of the overlay */
+}
+
+.breadcrumb1 {
+  color: rgb(252, 252, 252);
+  font-size: 16px;
+  z-index: 2; /* Ensures breadcrumb is on top of the overlay */
+}
+
+.breadcrumb1 .current-page {
+  color: #ffd700; /* Golden yellow for the current page */
+}
+
+@media (max-width: 768px) {
+  .header-title1 {
+    font-size: 36px;
+  }
+
+  .breadcrumb1 {
+    font-size: 14px;
+  }
+}
+
+.imgBx1 img {
+  width: 100%;
+
+  -o-object-fit: cover;
+
+  object-fit: cover;
+}
+
+.card3 {
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* height: 400px; */
+  cursor: pointer;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px;
+}
+
+.card-body {
+  background-color: #f2f5ff;
+  padding: 10px;
+}
+
+.pagination .page-item .page-link {
+  color: rgb(255, 255, 255);
+  background-color: #28246d;
+}
+
+.pagination .page-item {
+  padding: 10px;
+}
+/*  
+      .text-truncate {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    } */
+
+/* Existing styles */
+.pagination .page-item.active .page-link {
+  background-color: #28246d !important; /* Active background color */
+  color: white; /* Active text color */
+}
+
+.pagination .page-item .page-link {
+  background-color: #f2f5ff !important; /* Button background color */
+  color: #28246d; /* Button text color */
+}
+
+.pagination .page-link {
+  color: #000000; /* Default text color */
+}
+
+.pagination .page-link:hover {
+  background-color: #28246d !important;
+  color: #f2f5ff; /* Hover background and text */
+}
+
+/* Additional styles for responsiveness */
+.pagination {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of items on smaller screens */
+  justify-content: center; /* Center the pagination items */
+}
+
+.page-item {
+  margin: 5px; /* Add some spacing between buttons */
+}
+
+@media (max-width: 768px) {
+  .page-item {
+    flex: 1 1 auto; /* Allow buttons to shrink or grow to fit the space */
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+}
